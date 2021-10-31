@@ -1,0 +1,20 @@
+#   author: thibault@desaules.me
+#   contributor: none
+#   licence: Apache License, Version 2.0 (https://opensource.org/licenses/Apache-2.0)
+---
+version: '3.8'
+
+services:
+  template-crystal-kemal-svelte-rollup:
+    container_name: template-crystal-kemal-svelte-rollup
+    restart: 'no'
+    ports:
+      - "5000:5000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ..:/opt/workspace:cached
+    build: 
+      context: .
+      dockerfile: Dockerfile
+...

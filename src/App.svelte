@@ -1,8 +1,8 @@
 <script>
 	export let name;
-	var ws = new WebSocket("ws://0.0.0.0:5000/socket");
+	var ws = new WebSocket("ws://100.115.92.203:5000/socket");
 	ws.onmessage = function(event) {
-  		console.log("websocket: ", event);
+  		console.log("WebSocket message received:", event);
 	};
 </script>
 

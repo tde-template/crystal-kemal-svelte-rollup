@@ -9,7 +9,7 @@ get "/" do |env|
 end 
 
 ws "/socket" do |socket|
-  socket.send "Hello World!"
+  socket.send "Hello from Kemal!"
 end
 
 Kemal.config.port = 5000

@@ -5,7 +5,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "crystal run src/server.cr"
+    "start": "sirv public --no-clear",
+    "crystal": "crystal run src/server.cr"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
