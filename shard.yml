@@ -1,0 +1,17 @@
+name: admin
+version: 0.1.0
+
+authors:
+  - Thibault DESAULE (thibault@desaules.me)
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+targets:
+  admin:
+    main: src/server.cr
+
+crystal: 1.0.0
+
+license: Apache License 2.0
