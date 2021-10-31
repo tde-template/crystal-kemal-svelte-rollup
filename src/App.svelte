@@ -1,5 +1,5 @@
-<script>
-	export let name;
+<script lang="ts">
+	export let name: string;
 	var ws = new WebSocket("ws://100.115.92.203:5000/socket");
 	ws.onmessage = function(event) {
   		console.log("WebSocket message received:", event);
