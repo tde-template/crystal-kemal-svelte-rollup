@@ -1,3 +1,7 @@
+<main lang="pug">
+	h1 Hello {name}!
+</main>
+
 <script lang="ts">
 	export let name: string;
 	var ws = new WebSocket("ws://100.115.92.203:5000/socket");
@@ -6,11 +10,7 @@
 	};
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-</main>
-
-<style>
+<style lang="scss">
 	main {
 		text-align: center;
 		padding: 1em;
