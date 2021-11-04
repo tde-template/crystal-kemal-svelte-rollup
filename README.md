@@ -1,10 +1,10 @@
 # TEMPLATE CRYSTAL KEMAL SVELTE ROLLUP
 
-Une jolie description du projet pour faire rêver la DSI
+A simple web app template using crytal as webserver with kemal framework and websocket support, svelte and rollup as javascript front framework and bulma as css framework using pug, typescript and scss. 
 
 ## Docker
 
-### Command Line Interface
+### Commands
 
 build and create the service but don't start it:
 ```bash
@@ -43,10 +43,12 @@ cd /opt/workspace
 npm install
 npm run dev
 npm run build
-npm run crystal
+npm run server
+npm run check
+npm install --save-dev jest ts-jest jest-sonar-reporter @testing-library/svelte @testing-library/jest-dom svelte-jester @types/jest babel-jest @babel/preset-env
 ```
 
-## Git Flow 
+## Git flow 
 
 The Git Flow is the most known workflow on this list. It was created by Vincent Driessen in 2010 and it is based in two main branches with infinite lifetime:
 - main : this branch contains production code. All development code is merged into main sometime.
@@ -61,6 +63,19 @@ During the development cycle, a variety of supporting branches are used:
 this image describe the worflow:
 
 <img src="https://git-flow.readthedocs.io/fr/latest/_images/gitflow.png" width="500">
+
+## Related links
+
+- <https://crystal-lang.org/>
+- <https://crystal-lang.org/reference/getting_started/index.html>
+- <https://kemalcr.com/>
+- <https://kemalcr.com/guide/>
+- <https://svelte.dev/>
+- <https://svelte.dev/blog/the-easiest-way-to-get-started>
+- <https://github.com/sveltejs/svelte-preprocess>
+- <https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md>
+- <https://jestjs.io/>
+- <https://bulma.io/>
 
 ## Contributing
 

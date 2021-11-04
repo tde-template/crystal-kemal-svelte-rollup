@@ -5,4 +5,6 @@
 *.dwarf
 /node_modules/
 /public/build/
+/.crystal/
+/.vscode/
 .DS_Store
