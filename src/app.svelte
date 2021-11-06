@@ -10,7 +10,8 @@
 </template>
 
 <script lang="ts">
-	export let name: string;
+	let name: string;
+  name = 'world2'
 	var ws = new WebSocket("ws://100.115.92.203:5000/socket");
 	ws.onmessage = function(event) {
   		console.log("WebSocket message received:", event);

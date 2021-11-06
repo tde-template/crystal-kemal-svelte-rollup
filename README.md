@@ -1,6 +1,6 @@
 # TEMPLATE CRYSTAL KEMAL SVELTE ROLLUP
 
-A simple web app template using crytal as webserver with kemal framework and websocket support, svelte and rollup as javascript front framework and bulma as css framework using pug, typescript and scss. 
+A simple web app template using crytal as webserver with kemal framework and websocket support, svelte and rollup as javascript front framework, Jest for testing and bulma as css framework (all using pug, typescript and scss). 
 
 ## Docker
 

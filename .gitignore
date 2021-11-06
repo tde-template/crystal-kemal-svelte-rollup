@@ -7,4 +7,6 @@
 /public/build/
 /.crystal/
 /.vscode/
+/coverage/
 .DS_Store
+package-lock.json
