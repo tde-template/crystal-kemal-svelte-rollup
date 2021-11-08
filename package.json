@@ -7,12 +7,9 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "build": "rollup -c",
-    "build:dev": "rollup -c",
-    "build:prod": "rollup -c",
-    "start": "rollup -c -w",
+    "start": "sirv public",
     "start:watch": "rollup -c -w",
-    "start:dev": "rollup -c && crystal run src/server.cr",
-    "start:prod": "rollup -c && crystal run src/server.cr"
+    "start:crystal": "rollup -c && crystal run src/server.cr"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
