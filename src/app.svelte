@@ -9,9 +9,9 @@
       | !
 </template>
 
-<script lang="ts">
+<script lang="typescript">
 	let name: string;
-  name = 'world2'
+  name = 'world';
 	var ws = new WebSocket("ws://100.115.92.203:5000/socket");
 	ws.onmessage = function(event) {
   		console.log("WebSocket message received:", event);

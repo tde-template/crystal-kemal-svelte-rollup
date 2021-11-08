@@ -45,7 +45,6 @@ npm run dev
 npm run build
 npm run server
 npm run check
-npm install --save-dev jest ts-jest jest-sonar-reporter @testing-library/svelte @testing-library/jest-dom svelte-jester @types/jest babel-jest @babel/preset-env
 ```
 
 ## Git flow 

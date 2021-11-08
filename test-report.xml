@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/opt/workspace/src/tests/app.test.ts">
+    <testCase name="should render" duration="100"/>
+  </file>
+</testExecutions>
