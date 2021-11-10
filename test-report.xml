@@ -2,5 +2,6 @@
 <testExecutions version="1">
   <file path="/opt/workspace/src/tests/app.test.ts">
     <testCase name="should render" duration="97"/>
+    <testCase name="shows proper heading when rendered" duration="13"/>
   </file>
 </testExecutions>

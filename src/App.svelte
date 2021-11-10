@@ -7,12 +7,19 @@
       | My first website with 
       strong Bulma
       | !
+    button(on:click='{handleClick}') {buttonText}
 </template>
 
 <script lang="ts">
 	export let name: string;
-  var symbol = '!';
-	var ws = new WebSocket("ws://100.115.92.203:5000/socket");
+  let symbol = '!';
+	let ws = new WebSocket("ws://100.115.92.203:5000/socket");
+  let buttonText = 'Button';
+
+  function handleClick() {
+    buttonText = 'Button Clicked'
+  }
+
 	ws.onmessage = function(event) {
   		console.log("WebSocket message received:", event);
 	};

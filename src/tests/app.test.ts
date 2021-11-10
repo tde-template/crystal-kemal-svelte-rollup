@@ -2,10 +2,18 @@
  * @jest-environment jsdom
  */
 
-import { render } from "@testing-library/svelte";
-import App from "../App.svelte";
+import '@testing-library/jest-dom'
+import { render, fireEvent } from '@testing-library/svelte'
+import App from '../App.svelte'
 
-test("should render", () => {
-  const results = render(App, { props: { name: "world" } });
-  expect(() => results.getByText("Hello world !")).not.toThrow();
-});
+test('shows proper heading when rendered', () => {
+  const { getByText } = render(App, { name: 'World' })
+  expect(getByText('Hello World !')).toBeInTheDocument()
+})
+
+test('changes button text on click', async () => {
+  const {getByText} = render(App, {name: 'World'})
+  const button = getByText('Button')
+  await fireEvent.click(button)
+  expect(button).toHaveTextContent('Button Clicked')
+})
