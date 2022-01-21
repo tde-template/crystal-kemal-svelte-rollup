@@ -1,6 +1,9 @@
 #   author: thibault@desaules.me
 #   contributor: none
 #   licence: Apache License, Version 2.0 (https://opensource.org/licenses/Apache-2.0)
+#   example:
+#     docker-compose --file /mnt/c/Users/tdesa/GitHub/template-crystal-kemal-svelte-rollup/.container/docker-compose.yml up --detach --remove-orphans --force-recreate
+#     docker-compose --file /mnt/c/Users/tdesa/GitHub/template-crystal-kemal-svelte-rollup/.container/docker-compose.yml down
 ---
 version: '3.8'
 

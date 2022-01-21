@@ -41,10 +41,13 @@ docker-compose rm -f
 ```
 cd /opt/workspace
 npm install
-npm run dev
-npm run build
-npm run server
+shards install
 npm run check
+npm run test
+npm run build
+npm run start
+npm run start:watch
+npm run start:crystal
 ```
 
 ## Git flow 

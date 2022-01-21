@@ -2,7 +2,7 @@
 #   contributor: none
 #   licence: Apache License, Version 2.0 (https://opensource.org/licenses/Apache-2.0)
 
-FROM alpine:3.14.2
+FROM alpine:3.15
 
 # info: copy base scripts to the created folder
 COPY install.sh /root/install.sh
