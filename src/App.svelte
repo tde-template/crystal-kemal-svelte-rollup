@@ -13,7 +13,7 @@
 <script lang="ts">
 	export let name: string;
   let symbol = '!';
-	let ws = new WebSocket("ws://127.0.0.1:5000/socket");
+	let ws = new WebSocket("ws://home.desaules.local:5000/socket");
   let buttonText = 'Button';
 
   function handleClick() {
