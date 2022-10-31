@@ -11,4 +11,5 @@
 .DS_Store
 .package-lock.json
 .test-report.xml
-*.lock
+shard.lock
+package-lock.json

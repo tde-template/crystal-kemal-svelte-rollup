@@ -2,44 +2,74 @@
 
 A simple web app template using crytal as webserver with kemal framework and websocket support, svelte and rollup as javascript front framework, Jest for testing and bulma as css framework (all using pug, typescript and scss). 
 
-## Docker
+## Build and run container image
 
-### Commands
+### Linux / MacOS / Zsh
 
-build and create the service but don't start it:
-```bash
-docker-compose up --build --force-recreate --no-start
+```zsh
+podman build \
+    --tag crystal-kemal-svelte-rollup \
+    $HOME/Repositories/GitHub/tde-template/crystal-kemal-svelte-rollup
+
+podman run \
+    --detach \
+    --interactive \
+    --tty \
+    --name crystal-kemal-svelte-rollup \
+    --publish 5000:5000 \
+    --mount type=bind,source=$HOME/Repositories/GitHub/tde-template/crystal-kemal-svelte-rollup,target=$HOME/crystal-kemal-svelte-rollup crystal-kemal-svelte-rollup \
+    sleep infinity
+
+podman exec \
+    --interactive \
+    --tty crystal-kemal-svelte-rollup \
+    zsh
+
+podman start \
+    crystal-kemal-svelte-rollup
+
+podman stop \
+    crystal-kemal-svelte-rollup
+
+podman rm \
+    crystal-kemal-svelte-rollup
 ```
 
-start service:
-```bash
-docker-compose start
-```
+### Windows / Powershell
 
-list available service:
-```bash
-docker-compose images
-```
+```powershell
+podman build `
+    --tag crystal-kemal-svelte-rollup `
+    $Home\Repositories\GitHub\tde-template\crystal-kemal-svelte-rollup
 
-exec shell on container:
-```bash
-docker-compose exec template-crystal-kemal-svelte-rollup ash
-```
+podman run `
+    --detach `
+    --interactive `
+    --tty `
+    --name crystal-kemal-svelte-rollup `
+    --publish 5000:5000 `
+    --mount type=bind,source=$Home\Repositories\GitHub\tde-template\crystal-kemal-svelte-rollup,target=/workspace crystal-kemal-svelte-rollup `
+    sleep infinity
 
-stop and destroy container and every stuff related:
-```bash
-docker-compose down
-```
+podman start `
+    crystal-kemal-svelte-rollup
 
-remove container
-```bash
-docker-compose rm -f
+podman exec `
+    --interactive `
+    --tty crystal-kemal-svelte-rollup `
+    zsh
+
+podman stop `
+    crystal-kemal-svelte-rollup
+
+podman rm `
+    crystal-kemal-svelte-rollup
 ```
 
 ## Install and build steps
 
 ```
-cd /opt/workspace
+cd /workspace
 npm install
 shards install
 npm run check
